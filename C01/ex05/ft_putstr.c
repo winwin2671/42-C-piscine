@@ -14,7 +14,8 @@
 
 void	ft_putstr(char *str)
 {
-	write(1, str, 2147483647);
+	while (*str)
+		write(1, str++, 1);
 }
 
 /*int	main(void)
